@@ -183,11 +183,11 @@ h4 {
 }
 #image3{
     mix-blend-mode: multiply;
-    filter: contrast(1);
+    /* filter: contrast(1); */
     position: absolute;
     left: 40%;
     z-index: 1;
-    margin-bottom: 29%;
+    margin-bottom: 28%;
 }
 .about-text h2 {
     position: relative;
@@ -341,6 +341,40 @@ button:hover {
 }
 
 .contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.My-cv {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.My-cv p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.My-cv .button-two {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.My-cv .button-two:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
