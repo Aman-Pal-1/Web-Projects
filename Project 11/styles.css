@@ -1,0 +1,444 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(120deg, #fac413 0%, #fb4310 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.4rem;
+}
+
+.navbar .logo {
+    font-size: 1.6rem;
+    color: #f77620;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #e65c00;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #000000;
+    border-radius: 5px;
+    transform: scale(1.5);
+    font: bolder;
+    
+}
+
+main {
+    flex: 1;
+}
+
+.home {
+    background: url('image2.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 7rem 1rem;
+}
+
+.home h1 {
+    font-size: 3.2rem;
+}
+
+.home p {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    text-shadow: 0px 1px 5  px rgba(0, 0, 0, 0.724);
+
+}
+
+.shop-now-btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.shop-now-btn:hover {
+    background: #e65c00;
+}
+
+.about {
+    padding: 2rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.about h2 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.about > p {
+    font-size: 1.3rem;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.about-item {
+    background: #ffffff7a;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.217);
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.services, .contact {
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.services h1, .contact h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-item {
+    background: #ffffffb8;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.472);
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.service-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.434);
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.53);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    display: flex ;
+    justify-content: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.764);
+}
+
+.contact-form button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 6px;
+}
+
+.contact-form button:hover {
+    background: #e65c00;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    height: 410px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+   
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-section p, .footer-section ul {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    list-style: circle;
+}
+.footer-section a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.footer-section ul li span {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #e65c00;
+}
+::-webkit-scrollbar{
+     width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(253, 232, 190);
+}
+::-webkit-scrollbar-thumb{
+       background: linear-gradient(#f9bf00 0%, #fc714b 100%);
+       border: 1px solid rgb(253, 176, 176);
+       border-radius: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .shop-now-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-item {
+        max-width: 100%;
+    }
+
+    .services h1, .contact h1 {
+        font-size: 2rem;
+    }
+
+    .services-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service-item {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar .logo {
+        font-size: 1.25rem;
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home p {
+        font-size: 0.875rem;
+    }
+
+    .shop-now-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        gap: 0.5rem;
+    }
+
+    .about-item {
+        padding: 1rem;
+    }
+
+    .services h1, .contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .services-content {
+        gap: 0.5rem;
+    }
+
+    .service-item {
+        padding: 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .footer-section p, .footer-section ul {
+        font-size: 0.875rem;
+    }
+
+    .social-links ul {
+        gap: 0.5rem;
+    }
+
+    .social-links a {
+        font-size: 1.25rem;
+    }
+}
