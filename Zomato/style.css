@@ -1,0 +1,130 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #fff; /* Default text color set to white */
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Allow footer to stay at the bottom */
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+}
+
+/* Header styles */
+header {
+    background-color: rgb(255, 0, 0); /* Semi-transparent background for visibility */
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10; /* Ensure it stays above the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600; /* Bold for the logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+nav ul li a:hover {
+   font-size: 1.2rem;
+    border-radius: 5px;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Main content styles */
+main {
+    flex-grow: 1; /* Allow main to grow and take remaining space */
+}
+
+/* Background image */
+.background-image {
+    height: 60vh; /* 60% of viewport height */
+    background: url('img/Zomato.png') no-repeat center center;
+    background-size: cover; /* Cover the entire area */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center; /* Center align text */
+}
+
+/* Heading styles */
+.background-image h1 {
+    font-size: 3rem; /* Larger title text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for better readability */
+    margin-bottom: 20px;
+}
+
+/* Input styles */
+input {
+    padding: 15px;
+    width: 50%;
+    font-size: 1rem;
+    border: 2px solid #ff3547;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: transparent; /* No background color */
+    color: #fff; /* White text color */
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder color */
+}
+
+input:focus {
+    border-color: #ff6f7f;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(255, 53, 71, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .background-image h1 {
+        font-size: 2rem; /* Smaller title text for tablets */
+    }
+
+    input {
+        width: 80%; /* Wider input for mobile devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .background-image h1 {
+        font-size: 1.5rem; /* Further smaller title text for very small screens */
+    }
+
+    input {
+        width: 90%; /* Maximize input width for small screens */
+    }
+}
